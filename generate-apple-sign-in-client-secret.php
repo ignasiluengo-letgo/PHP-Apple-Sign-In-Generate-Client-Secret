@@ -16,18 +16,6 @@ class ImdJWT
     }
 
     /**
-     * Decodes data encoded with Base 64 Encoding with URL and Filename Safe Alphabet.
-     *
-     * @param string $data the encoded data
-     * @return string|bool the original data or FALSE on failure. The returned data may be binary.
-     * @link http://tools.ietf.org/html/rfc4648#section-5
-     */
-    public static function base64UrlDecode($data)
-    {
-        return base64_decode(strtr($data, '-_', '+/'));
-    }
-
-    /**
      * The signature returned by OpenSSL is an ASN.1 sequence that contains additional information. You have to remove the extra data before concatenation.
      * DER = Distinguished Encoding Rules
      *
