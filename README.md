@@ -1,4 +1,4 @@
-# PHP-Apple-Sign-In generate Client Secret
+# PHP Apple Sign In: Generate client secret
 To implement a custom Apple Sign In you need to generate a client secret JWT.
 
 I wrote a little helper for this challenge.
