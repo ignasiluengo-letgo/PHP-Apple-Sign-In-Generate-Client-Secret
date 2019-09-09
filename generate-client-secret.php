@@ -81,4 +81,3 @@ $signature = ImdJWT::base64UrlEncode($signature);
 
 $clientSecret = $data . '.' . $signature;
 echo $clientSecret;
-exit;
